@@ -284,6 +284,11 @@ header {
   }
 }
 
+.team-img {
+  width: 450px;
+  height: 460px;
+}
+
 .button {
   font-weight: 700;
   font-size: 16px;
