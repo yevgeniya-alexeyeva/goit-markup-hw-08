@@ -1,6 +1,82 @@
-// .benefits-section {
-//   padding: 94px 0px;
-// }
+.benefits-section {
+  padding-bottom: 60px;
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
+  background-color: $filbut-team-bg;
+  &-bg {
+    @extend %flex-a-j;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $filbut-team-bg;
+    border-radius: 4px;
+  }
+}
+.benefits-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $title-color;
+}
+
+.benefits-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+
+  color: $text-color;
+}
+@media screen and (max-width: 767px) {
+  .benefits-items {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  .benefits-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .benefits-items {
+    width: 354px;
+    @media screen and (max-width: 1199px) {
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;
+      }
+      &:not(:nth-last-child(2n-1)) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-items {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+// .benefits-items {
+//   width: 270px;
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+
 // .benefits-list {
 //   display: flex;
 // }

@@ -1,4 +1,4 @@
-.social-link, .close-button, .agreement-wrapper {
+.benefits-icon-bg, .social-link, .close-button, .agreement-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,6 +143,7 @@ header {
 }
 
 .hero-section {
+  margin-bottom: 60px;
   padding: 200px 0;
   background-color: #c4c4c4;
   background-size: cover;
@@ -171,9 +172,10 @@ header {
 
 @media screen and (min-width: 1200px) {
   .hero-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-img-1600.jpg);
     max-width: 1600px;
     margin: 0 auto;
+    margin-bottom: 94px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-img-1600.jpg);
   }
 }
 
@@ -208,6 +210,78 @@ header {
   margin-right: auto;
   padding: 10px 32px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.benefits-section {
+  padding-bottom: 60px;
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
+  background-color: #f5f4fa;
+}
+
+.benefits-icon-bg {
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.benefits-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.benefits-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .benefits-items:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .benefits-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .benefits-items {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits-items:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  .benefits-items:not(:nth-last-child(2n-1)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-items {
+    width: 270px;
+  }
+  .benefits-items:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .button {
