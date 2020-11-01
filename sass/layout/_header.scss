@@ -1,0 +1,128 @@
+header {
+  border-bottom: 1px solid #ececec;
+}
+.site-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-container {
+  display: none;
+  &.is-open {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+
+    width: 480px;
+    height: 453px;
+    background-color: $hero-color;
+  }
+}
+.menu-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+.nav-list__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.nav-list__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.167;
+
+  letter-spacing: 0.02em;
+
+  color: $title-color;
+}
+
+// .navigation-link {
+//   position: relative;
+//   display: block;
+//   padding-top: 30px;
+//   padding-bottom: 30px;
+
+//   @include transition(color);
+
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.143;
+//   letter-spacing: 0.02em;
+//   color: $title-color;
+//   &.current {
+//     color: $accent-color;
+//     &::after {
+//       position: absolute;
+//       left: 0;
+//       bottom: 0;
+//       display: block;
+//       content: '';
+//       width: 100%;
+//       height: 4px;
+//       background-color: $accent-color;
+//       border-radius: 2px;
+//     }
+//   }
+//   &:hover,
+//   &:focus {
+//     color: $accent-color;
+//   }
+// }
+
+// .nav-list {
+//   display: flex;
+//
+// }
+// .nav-list .item:not(:last-child) {
+//   margin-right: 50px;
+// }
+// /* Contacts-in-header */
+
+// .header-contacts {
+//   @extend %flex-a;
+//   padding-top: 30px;
+//   padding-bottom: 30px;
+
+//   @include transition(color);
+
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.143;
+//   letter-spacing: 0.02em;
+//   color: $text-color;
+//   &-list {
+//     display: flex;
+//     align-items: center;
+//   }
+//   &-item {
+//     @extend %flex-a;
+//     &:not(:last-child) {
+//       margin-right: 50px;
+//     }
+//   }
+//   &:hover,
+//   &:focus {
+//     color: $accent-color;
+//   }
+// }
+
+// .icon-mail,
+// .icon-smartphone {
+//   margin-right: 10px;
+//   fill: currentColor;
+// }

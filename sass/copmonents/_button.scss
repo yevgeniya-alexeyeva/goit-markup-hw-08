@@ -1,0 +1,15 @@
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+
+  letter-spacing: 0.06em;
+  color: $hero-color;
+  background-color: $accent-color;
+  border: none;
+
+  border-radius: 4px;
+  cursor: pointer;
+  outline-color: $accent-color;
+}

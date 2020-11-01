@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $main-font;
+  font-style: normal;
+}
+img {
+  display: block;
+}
+input {
+  font-family: inherit;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.container {
+  max-width: 450px;
+  padding: 0 15px;
+  outline: red;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+  &.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
+}
