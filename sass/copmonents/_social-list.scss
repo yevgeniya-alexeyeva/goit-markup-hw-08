@@ -1,9 +1,12 @@
 .social-list {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-j;
+
   padding-left: 30px;
   padding-right: 30px;
   margin-top: 16px;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 .social-icon {
   @include transition(fill);
@@ -18,6 +21,9 @@
 }
 
 .social-link {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
   @extend %flex-a-j;
 
   @include transition(background-color);

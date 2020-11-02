@@ -1,5 +1,5 @@
 .benefits-section {
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 
 .benefits-icon {
@@ -68,6 +68,9 @@
     &:not(:last-child) {
       margin-right: 30px;
     }
+  }
+  .benefits-section {
+    padding: 94px 0;
   }
 }
 

@@ -1,5 +1,4 @@
 .hero-section {
-  margin-bottom: 60px;
   padding: 200px 0;
   background-color: $hero-bg;
   background-size: cover;
@@ -41,7 +40,6 @@
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
     margin: 0 auto;
-    margin-bottom: 94px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
