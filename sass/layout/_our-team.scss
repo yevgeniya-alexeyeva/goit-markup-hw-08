@@ -62,14 +62,14 @@
   }
   .team-list {
     display: flex;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1200px) {
       flex-wrap: wrap;
     }
   }
   .team-item {
     width: 354px;
     height: 536px;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1200px) {
       &:not(:nth-last-child(-n + 2)) {
         margin-bottom: 30px;
       }

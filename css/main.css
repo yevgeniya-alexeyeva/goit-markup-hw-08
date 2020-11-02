@@ -1,4 +1,4 @@
-.close-button, .agreement-wrapper, .social-link, .benefits-icon-bg, .servises-description, .clients-link {
+.close-button, .agreement-wrapper, .social-link, .subcripe-button, .benefits-icon-bg, .servises-description, .clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,6 +35,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  min-width: 480px;
 }
 
 img {
@@ -54,6 +55,7 @@ input {
 }
 
 .container {
+  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -452,6 +454,113 @@ header {
   color: #212121;
 }
 
+.footer {
+  padding: 60px 0px;
+  background: #2f303a;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.company-adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-contacts {
+  display: block;
+  margin-top: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.adress {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.footer-social-container {
+  margin: 60px 0;
+}
+
+.join {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 206px;
+}
+
+.subscripe-capture {
+  display: block;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+}
+
+.subscripe-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  padding: 16px 15px;
+  margin-bottom: 20px;
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.25;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subcripe-button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding-left: 29px;
+  padding-right: 28px;
+  margin: 0 auto;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.subcripe-button:focus {
+  outline-color: #2196f3;
+  background-color: #188ce8;
+}
+
+.subcripe-button:hover {
+  background-color: #188ce8;
+}
+
+.send-icon {
+  margin-left: 10px;
+}
+
 .hero-section {
   padding: 200px 0;
   background-color: #c4c4c4;
@@ -712,7 +821,7 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .team-list {
     flex-wrap: wrap;
   }
@@ -725,7 +834,7 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .team-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
@@ -757,6 +866,8 @@ header {
 }
 
 .clients-section {
+  width: 100%;
+  min-width: 480px;
   padding: 60px 0px;
 }
 
@@ -787,7 +898,7 @@ header {
   border-color: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .clients-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
