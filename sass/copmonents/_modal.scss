@@ -9,6 +9,8 @@
   visibility: visible;
   pointer-events: auto;
 
+  overflow-y: scroll;
+
   @include transition(opacity visibility);
   background: rgba(0, 0, 0, 0.2);
 }

@@ -1,6 +1,7 @@
 .filt-but-list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
@@ -8,6 +9,11 @@
 
 .filter-item:not(:last-child) {
   margin-right: 8px;
+}
+@media screen and (max-width: 767px) {
+  .filter-item:nth-child(n + 4) {
+    margin-top: 15px;
+  }
 }
 .filter-button {
   padding: 6px 22px;
