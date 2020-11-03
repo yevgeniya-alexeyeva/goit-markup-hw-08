@@ -636,6 +636,11 @@ header {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.social-link.infooter:hover, .social-link.infooter:focus {
+  background-color: #2196f3;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .infooter > .social-icon {
   fill: #ffffff;
 }
