@@ -95,8 +95,19 @@ input {
   }
 }
 
-header {
+.header-placeholder {
+  width: 100%;
+  height: 61px;
+}
+
+.container.header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
   border-bottom: 1px solid #ececec;
+  position: fixed;
+  z-index: 10;
+  background-color: #ffffff;
 }
 
 .site-nav {
@@ -192,9 +203,6 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  .header {
-    position: relative;
-  }
   .menu-container {
     display: none;
   }
@@ -225,6 +233,9 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .header-placeholder {
+    height: 81px;
+  }
   .menu-button {
     display: none;
   }
