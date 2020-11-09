@@ -404,6 +404,8 @@ input {
 header {
   width: 100%;
   height: 65px;
+  border-bottom: 1px solid #ececec;
+  z-index: 10;
 }
 
 .header-wrapper {
@@ -411,11 +413,8 @@ header {
   z-index: 10;
   width: 100%;
   height: 65px;
-  background-color: #ffffff;
-}
-
-.header {
   border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
 }
 
 .site-nav {
@@ -518,7 +517,7 @@ header {
     display: block;
     text-align: center;
     position: absolute;
-    top: 102%;
+    top: 100%;
     left: 0;
     right: 0;
     padding-top: 60px;
@@ -542,10 +541,10 @@ header {
 
 @media screen and (min-width: 768px) {
   header {
-    height: 81px;
+    height: 80px;
   }
   .header-wrapper {
-    height: 81px;
+    height: 80px;
   }
   .menu-button {
     display: none;
